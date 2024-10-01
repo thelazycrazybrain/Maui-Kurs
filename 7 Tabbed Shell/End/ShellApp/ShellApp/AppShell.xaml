@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:ShellApp.Pages"
+    Title="ShellApp">
+    <TabBar>
+        <Tab Icon="Resources/Images/dotnet_bot.png" 
+             Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" 
+                            Route="Home" />
+        </Tab>
+        <Tab Icon="Resources/Images/dotnet_bot.png" 
+             Title="Testimonials">
+            <ShellContent ContentTemplate="{DataTemplate pages:TestimonialDetailPage}" 
+                            Route="Testimonaials" />
+        </Tab>
+        <Tab Icon="Resources/Images/dotnet_bot.png" 
+             Title="Community"  >
+            <ShellContent ContentTemplate="{DataTemplate pages:CommunityListPage}"  
+                            Icon="Resources/Images/dotnet_bot.png"
+                            Route="Community" Title="Community"/>
+            <ShellContent ContentTemplate="{DataTemplate pages:HelpPage}" 
+                            Title="Help" 
+                            Icon="Resources/Images/dotnet_bot.png"
+                            Route="Help" />
+        </Tab>
+    </TabBar>
+
+</Shell>
