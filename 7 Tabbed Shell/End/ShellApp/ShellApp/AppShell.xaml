@@ -19,12 +19,12 @@
         <Tab Icon="Resources/Images/dotnet_bot.png" 
              Title="Community"  >
             <ShellContent ContentTemplate="{DataTemplate pages:CommunityListPage}"  
-                            Icon="Resources/Images/dotnet_bot.png"
-                            Route="Community" Title="Community"/>
+                        Icon="Resources/Images/dotnet_bot.png"
+                        Route="Community" Title="Community"/>
             <ShellContent ContentTemplate="{DataTemplate pages:HelpPage}" 
-                            Title="Help" 
-                            Icon="Resources/Images/dotnet_bot.png"
-                            Route="Help" />
+                        Title="Help" 
+                        Icon="Resources/Images/dotnet_bot.png"
+                        Route="Help" />
         </Tab>
     </TabBar>
 
