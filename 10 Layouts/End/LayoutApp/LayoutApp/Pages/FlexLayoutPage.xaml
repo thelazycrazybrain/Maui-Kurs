@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutApp.Pages.FlexLayoutPage"
+             Title="FlexLayoutPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Row" Margin="0,20,0,5" />
+            <FlexLayout Direction="Row" HeightRequest="300">
+                <Button Text="Item 1" Background="Pink"/>
+                <Button Text="Item 2" />
+            </FlexLayout>
+            <Label Text="Column" Margin="0,20,0,5" />
+            <FlexLayout Direction="Column" HeightRequest="300">
+                <Button Text="Item 1" Background="Pink" />
+                <Button Text="Item 2" />
+            </FlexLayout>
+            <Label Text="Row with Grow" Margin="0,20,0,5" />
+            <FlexLayout Direction="Row" HeightRequest="300">
+                <Button Text="Item 1" Background="Pink" />
+                <Button Text="Item 2" FlexLayout.Grow="1" />
+            </FlexLayout>
+            <Label Text="Row with Basis" Margin="0,20,0,5" />
+            <FlexLayout Direction="Row"  HeightRequest="300">
+                <Button Text="Item 1" Background="Pink" />
+                <Button Text="Item 2" FlexLayout.Basis="20" />
+            </FlexLayout>
+            <Label Text="Row Aligned at End" Margin="0,20,0,5" />
+            <FlexLayout Direction="Row" AlignItems="End"  AlignContent="Stretch" HeightRequest="300">
+                <Button Text="Item 1" Background="Pink" />
+                <Button Text="Item 2" FlexLayout.Basis="20" />
+            </FlexLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

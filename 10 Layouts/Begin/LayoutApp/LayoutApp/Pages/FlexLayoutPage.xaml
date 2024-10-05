@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutApp.Pages.FlexLayoutPage"
+             Title="FlexLayoutPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Row" Margin="0,20,0,5" />
+         
+            <Label Text="Column" Margin="0,20,0,5" />
+           
+            
+            <Label Text="Row with Grow" Margin="0,20,0,5" />
+           
+            
+            <Label Text="Row with Basis" Margin="0,20,0,5" />
+           
+            
+            <Label Text="Row Aligned at End" Margin="0,20,0,5" />
+
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
