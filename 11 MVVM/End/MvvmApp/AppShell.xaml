@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MvvmApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MvvmApp.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MvvmApp">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:TodoListPage}"
+        Route="Todos" />
+
+</Shell>
